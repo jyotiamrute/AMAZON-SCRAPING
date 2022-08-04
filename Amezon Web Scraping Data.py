@@ -5,7 +5,7 @@ from selenium.common.exceptions import NoSuchElementException
 import re
 import json
 import pymysql
-
+#import all the required moduls
 csv1 = pd.read_csv('Amazon Scraping .csv')
 
 df = csv1.copy()
@@ -62,7 +62,7 @@ with open("jsondata.json", "w") as final:
 
 
 my_data = open("jsondata.json").read()
-
+print("json-data",my-data)
 json_obj = json.loads(my_data)
 
 con = pymysql.connect(host="localhost", user="root", password="", db="amazon_data")
